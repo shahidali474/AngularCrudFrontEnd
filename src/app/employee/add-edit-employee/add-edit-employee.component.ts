@@ -42,7 +42,6 @@ export class AddEditEmployeeComponent implements OnInit {
       employeeID: this.EmployeeId,
       employeeName: this.EmployeeName,
       department: this.Department,
-      //doj: this.DateOfJoining,
       doj: this.datePipe.transform(this.DateOfJoining, 'yyyy-MM-dd')
       //PhotoFileName: this.PhotoFileName
     };
