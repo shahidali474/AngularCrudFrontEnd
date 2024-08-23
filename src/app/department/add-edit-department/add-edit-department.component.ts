@@ -32,7 +32,7 @@ export class AddEditDepartmentComponent implements OnInit {
     this.service.addDepartment(dept).subscribe(res => {
       alert(res.toString());
     });
-    $('#exampleModal').hide();
+    $('#departmentModal').hide();
     setTimeout(() => {
       location.reload();
     }, 0);
@@ -46,7 +46,7 @@ export class AddEditDepartmentComponent implements OnInit {
     this.service.updateDepartment(dept).subscribe(res => {
       alert(res.toString());
     });
-    $('#exampleModal').hide();
+    $('#departmentModal').hide();
     this.isModalOpen = false;
     setTimeout(() => {
       location.reload();
